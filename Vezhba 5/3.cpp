@@ -6,15 +6,15 @@ int add(int a, int b) { // Funkcija za sobiranje na dva broja
     return a + b;
 }
 
-int subtract(int a, int b) {    //Fukncija za odzemanje na dva broja
+int subtract(int a, int b) {    //Funkcija za odzemanje na dva broja
     return a - b;
 }
 
-float divide(int a, int b) {    //Fukncija za delenje na dva broja
+float divide(int a, int b) {    //Funkcija za delenje na dva broja
     return (float)a / b;
 }
 
-double power(int a, int b) {    //Fukncija stepenuvanje na eden broj so drug
+double power(int a, int b) {    //Funkcija stepenuvanje na eden broj so drug
     return pow((double)a, (double)b);
 }
 
