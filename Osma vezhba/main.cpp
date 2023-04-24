@@ -10,9 +10,9 @@ struct student{
     string indeks;
 };
 
-char tocniPrvi[4]={'b', 'c', 'c', 'a'};
-char tocniVtori[4]={'a', 'b', 'c', 'b'};
-char tocniTreti[4]={'a', 'c', 'b', 'a'};
+char tocniPrvi[4]={'a', 'c', 'b', 'b'};
+char tocniVtori[4]={'c', 'a', 'c', 'c'};
+char tocniTreti[4]={'b', 'a', 'b', 'b'};
 
   // Funkcija koja se koristi za primanje na vlez
 
@@ -39,22 +39,22 @@ float checkOdgovor(int brojnaprasanje, char answer, char answer2){
 
   if (brojnaprasanje <= 4){
     if ( answer == tocniPrvi[brojnaprasanje-1] )
-      return 7;
+      return 6;
   }
   else if (brojnaprasanje > 4 && brojnaprasanje <= 8 ){
     if ( answer == tocniVtori[brojnaprasanje-5] )
-      return 8;
+      return 9;
   }
   else if (brojnaprasanje > 8 && brojnaprasanje <= 12 ){
     if ((( answer == tocniTreti[brojnaprasanje-9] ) && ( answer2 == tocniTreti[brojnaprasanje-9] )) || (( answer == tocniTreti[brojnaprasanje-9] ) && ( answer2 == tocniTreti[brojnaprasanje-9] )))
       return 10;
   }
 
-  
+
   return 0;
 }
 
-  // Funkcija za proverka na vnesot na odgovor 
+  // Funkcija za proverka na vnesot na odgovor
 
   float handleInput(int brojprasanje, fstream &file){
 
@@ -101,7 +101,7 @@ float checkOdgovor(int brojnaprasanje, char answer, char answer2){
   else if ( poeni >= 85 && poeni <= 100 )
     return 10;
   else
-    return -1; 
+    return -1;
 }
 
 
